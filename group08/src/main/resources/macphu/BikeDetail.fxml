@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="macphu.Controllers.BikeDetailController">
+   <top>
+      <VBox prefHeight="73.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="71.0" prefWidth="1000.0" style="-fx-background-color: #006600;">
+               <children>
+                  <Text fill="WHITE" layoutX="105.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EcoBike Rental">
+                     <font>
+                        <Font name="Monospaced Bold" size="32.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="43.0" fitWidth="66.0" layoutX="26.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../png/Logo.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="851.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+                     <font>
+                        <Font name="Chalkboard SE Light" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="916.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up">
+                     <font>
+                        <Font name="Chalkboard" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="800.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="341.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bike Detail" wrappingWidth="320.14548110961914">
+               <font>
+                  <Font name="Chalkboard" size="64.0" />
+               </font>
+            </Text>
+            <Text layoutX="496.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barcode:">
+               <font>
+                  <Font name="Chalkboard" size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="496.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type:">
+               <font>
+                  <Font name="Chalkboard" size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="496.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:">
+               <font>
+                  <Font name="Chalkboard" size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="500.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" wrappingWidth="124.65362548828125">
+               <font>
+                  <Font name="Chalkboard" size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="batteryHolder" layoutX="40.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Battery:">
+               <font>
+                  <Font name="Chalkboard" size="36.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="256.0" fitWidth="413.0" layoutX="29.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../png/Logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="RED" layoutX="499.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deposit: ">
+               <font>
+                  <Font name="Chalkboard" size="36.0" />
+               </font>
+            </Text>
+            <Button fx:id="rent_btn" onAction="#switchToConfirm" layoutX="749.0" layoutY="562.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="200.0" style="-fx-background-color: #009900;" text="Rent" textFill="#f2ff00">
+               <font>
+                  <Font name="Chalkboard" size="18.0" />
+               </font>
+            </Button>
+            <Text fx:id="deposit" fill="#0400ee" layoutX="718.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="200.28678131103516">
+               <font>
+                  <Font name="Chalkboard" size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="battery" fill="#0400ee" layoutX="278.0" layoutY="584.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Chalkboard" size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="status" fill="#0400ee" layoutX="715.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Chalkboard" size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="description" fill="#0400ee" layoutX="497.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="361.5682773590088">
+               <font>
+                  <Font name="Chalkboard" size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="type" fill="#0400ee" layoutX="714.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Chalkboard" size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="barcode" fill="#0400ee" layoutX="712.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Chalkboard" size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="884.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VND">
+               <font>
+                  <Font name="Chalkboard" size="36.0" />
+               </font>
+            </Text>
+            <Button fx:id="backBtn" layoutX="501.0" layoutY="562.0" mnemonicParsing="false" onAction="#switchBack" prefHeight="90.0" prefWidth="200.0" style="-fx-background-color: #333;" text="&lt;&lt; Return " textFill="WHITE">
+               <font>
+                  <Font name="Chalkboard" size="18.0" />
+               </font></Button>
+            <Text fx:id="licenseHolder" layoutX="41.0" layoutY="645.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Licence Plate:">
+               <font>
+                  <Font name="Chalkboard" size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="license" fill="#0400ee" layoutX="278.0" layoutY="646.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Chalkboard" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
